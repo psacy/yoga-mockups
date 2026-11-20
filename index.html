@@ -2,11 +2,43 @@
 <html lang="ru">
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
-<meta http-equiv="refresh" content="0; url=saji-mockups.html">
 <title>Практика Саджи — макеты</title>
+<style>
+  :root { --bg: #f6f3ee; --card: #ffffff; --text: #23201c; --muted: #6f685f; --line: #e3ddd3; --accent: #c2571a; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #181614; --card: #221f1c; --text: #f0ebe3; --muted: #a59d92; --line: #35302a; --accent: #f08a4b; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text);
+         font: 17px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+  main { max-width: 680px; margin: 0 auto; padding: 40px 16px 56px; }
+  h1 { font-size: 28px; line-height: 1.2; margin: 0 0 6px; }
+  .lead { color: var(--muted); margin: 0 0 28px; }
+  ol { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
+  a.card { display: block; padding: 16px 18px; background: var(--card); border: 1px solid var(--line);
+           border-radius: 14px; color: inherit; text-decoration: none; }
+  a.card:hover, a.card:focus-visible { border-color: var(--accent); outline: none; }
+  .card b { display: block; font-size: 18px; }
+  .card span { display: block; color: var(--muted); font-size: 15px; margin-top: 2px; }
+  .first { border-color: var(--accent); }
+  .first b::after { content: " →"; color: var(--accent); }
+  footer { margin-top: 28px; color: var(--muted); font-size: 14px; }
+  footer a { color: inherit; }
+</style>
 </head>
 <body>
-<p><a href="saji-mockups.html">Варианты интерфейса</a> · <a href="saji-screens.html">Схемы экранов</a> · <a href="saji-lesson.html">Схема занятия</a> · <a href="saji-table.html">Таблица асан</a> · <a href="CREDITS.md">Источники картинок</a></p>
+<main>
+  <h1>Практика Саджи</h1>
+  <p class="lead">Макеты приложения для практики. Это черновики: фото и цифры условные.</p>
+  <ol>
+    <li><a class="card first" href="saji-screens.html"><b>Схемы экранов</b><span>Семь экранов в ряд; кнопки и нижнее меню переводят к нужному экрану</span></a></li>
+    <li><a class="card" href="saji-mockups.html"><b>Варианты интерфейса</b><span>Как может выглядеть приложение</span></a></li>
+    <li><a class="card" href="saji-lesson.html"><b>Схема занятия</b><span>Асаны по разделам, в порядке практики</span></a></li>
+    <li><a class="card" href="saji-table.html"><b>Таблица асан</b><span>Все позиции программы с названиями и картинками</span></a></li>
+  </ol>
+  <footer>Картинки — Wikimedia Commons, свободные лицензии: <a href="CREDITS.md">авторы и источники</a>.</footer>
+</main>
 </body>
 </html>
