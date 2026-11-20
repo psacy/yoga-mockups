@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Практика Саджи — схемы экранов</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
+<style>
+html{scroll-behavior:smooth}
+body{margin:0;background:#ECECE8;color:#1A1A1A;font-family:Inter,system-ui,sans-serif}
+header{padding:24px 24px 0}
+h1{font-size:26px;margin:0 0 6px}
+header p{margin:0;color:#5C5C5C;font-size:15px;max-width:720px;line-height:1.45}
+.row{display:flex;gap:40px;padding:28px 24px 48px;overflow-x:auto;align-items:flex-start}
+section{flex:none;scroll-margin:16px}
+h2{font-size:15px;margin:0 0 10px;font-weight:600}
+.phone{width:390px;height:844px;border-radius:28px;overflow:hidden;box-shadow:0 0 0 1px #BDBDB8,0 8px 24px rgba(0,0,0,.08);transition:box-shadow .2s}
+section:target .phone{box-shadow:0 0 0 4px #B4490F,0 8px 24px rgba(0,0,0,.15)}
+.phone a{color:#1A1A1A}
+@media (max-width:480px){.row{flex-direction:column;align-items:center;padding:20px 0 40px}header{padding:20px 16px 0}.phone{transform-origin:top center}}
+</style></head><body>
+<header><h1>Практика Саджи — схемы экранов</h1>
+<p>Семь экранов приложения. Кнопки и нижнее меню кликабельны: нажатие переводит к нужному экрану и подсвечивает его рамкой. Серые блоки — места для фото и видео.</p></header>
+<div class="row">
+<section id="Main"><h2>1. Главная — огонь практики</h2><div class="phone"><div style="width: 390px; height: 844px; box-sizing: border-box; background: #FFFFFF; color: #1A1A1A; font-family: Inter, system-ui, sans-serif; display: flex; flex-direction: column">
+<div style="padding: 28px 24px 0; display: flex; justify-content: space-between; align-items: baseline">
+<div style="font-size: 22px; font-weight: 700">Сегодня</div>
+<div style="font-size: 14px; color: #5C5C5C">20 ноября</div>
+</div>
+<div style="flex-grow: 1; display: flex; flex-direction: column; align-items: center; gap: 12px; padding: 36px 24px 0">
+<svg role="img" aria-label="Огонь практики" width="150" height="150" viewBox="0 0 24 24" fill="none" stroke="#B4490F" stroke-width="1.4" stroke-linejoin="round"><path d="M12 2c1 4 6 6 6 12a6 6 0 0 1-12 0c0-2.200 1-3.600 2.200-4.600C8.400 11.600 9.400 13 10.500 13 10.500 9 10 6 12 2z"/><path d="M12 21a3 3 0 0 0 3-3c0-2-1.500-2.800-3-4.500-1.500 1.700-3 2.500-3 4.500a3 3 0 0 0 3 3z"/></svg>
+<div style="font-size: 64px; font-weight: 700; line-height: 1">12</div>
+<div style="font-size: 15px; color: #5C5C5C">дней подряд</div>
+<div style="display: flex; gap: 8px; margin-top: 16px">
+<div style="width: 40px; height: 40px; border-radius: 20px; background: #B4490F; color: #FFFFFF; font-size: 12px; display: flex; align-items: center; justify-content: center">пн</div>
+<div style="width: 40px; height: 40px; border-radius: 20px; background: #B4490F; color: #FFFFFF; font-size: 12px; display: flex; align-items: center; justify-content: center">вт</div>
+<div style="width: 40px; height: 40px; border-radius: 20px; background: #B4490F; color: #FFFFFF; font-size: 12px; display: flex; align-items: center; justify-content: center">ср</div>
+<div style="width: 40px; height: 40px; border-radius: 20px; background: #B4490F; color: #FFFFFF; font-size: 12px; display: flex; align-items: center; justify-content: center">чт</div>
+<div style="width: 40px; height: 40px; border-radius: 20px; border: 2px solid #1A1A1A; box-sizing: border-box; font-size: 12px; display: flex; align-items: center; justify-content: center">пт</div>
+<div style="width: 40px; height: 40px; border-radius: 20px; border: 1px solid #BDBDB8; box-sizing: border-box; color: #5C5C5C; font-size: 12px; display: flex; align-items: center; justify-content: center">сб</div>
+<div style="width: 40px; height: 40px; border-radius: 20px; border: 1px solid #BDBDB8; box-sizing: border-box; color: #5C5C5C; font-size: 12px; display: flex; align-items: center; justify-content: center">вс</div>
+</div>
+<div style="font-size: 14px; color: #5C5C5C; text-align: center; line-height: 1.45; margin-top: 16px; max-width: 290px">Огонь отмечает регулярность, а не результат. Важно, что ты пришёл на коврик.</div>
+</div>
+<div style="padding: 0 24px 20px; display: flex; flex-direction: column; gap: 10px">
+<a href="#Player" style="display: flex; align-items: center; justify-content: center; height: 56px; border-radius: 28px; background: #B4490F; color: #FFFFFF; font-size: 17px; font-weight: 600; text-decoration: none">Начать практику · 40 минут</a>
+<a href="#Player" style="display: flex; align-items: center; justify-content: center; height: 48px; border-radius: 24px; border: 1px solid #1A1A1A; box-sizing: border-box; font-size: 15px; text-decoration: none">Короткая версия · 15 минут</a>
+<a href="#Program" style="display: flex; align-items: center; justify-content: center; height: 44px; font-size: 15px; color: #5C5C5C">Посмотреть схему занятия</a>
+</div>
+<div style="display: flex; border-top: 1px solid #DADAD5; height: 64px">
+<a href="#Main" style="flex-grow: 1; flex-basis: 0; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 700; color: #B4490F; text-decoration: none">Сегодня</a>
+<a href="#Program" style="flex-grow: 1; flex-basis: 0; display: flex; align-items: center; justify-content: center; font-size: 13px; color: #5C5C5C; text-decoration: none">Программа</a>
+<a href="#Calendar" style="flex-grow: 1; flex-basis: 0; display: flex; align-items: center; justify-content: center; font-size: 13px; color: #5C5C5C; text-decoration: none">Календарь</a>
+<a href="#Friends" style="flex-grow: 1; flex-basis: 0; display: flex; align-items: center; justify-content: center; font-size: 13px; color: #5C5C5C; text-decoration: none">Друзья</a>
+</div>
+</div></div></section>
+<section id="Program"><h2>2. Схема занятия</h2><div class="phone"><div style="width: 390px; height: 844px; box-sizing: border-box; background: #FFFFFF; color: #1A1A1A; font-family: Inter, system-ui, sans-serif; display: flex; flex-direction: column">
+<div style="padding: 28px 24px 12px; display: flex; justify-content: space-between; align-items: baseline">
+<div style="font-size: 22px; font-weight: 700">Программа Саджи</div>
+<div style="font-size: 14px; color: #5C5C5C">41 шаг · 40 мин</div>
+</div>
+<div style="flex-grow: 1; overflow: hidden; padding: 0 24px; display: flex; flex-direction: column; gap: 8px">
+<div style="font-size: 12px; font-weight: 700; letter-spacing: 1px; color: #B4490F; margin-top: 6px">РАЗМИНКА · 10 МИН</div>
+<a href="#Asana" style="display: flex; align-items: center; gap: 12px; padding: 8px; border: 1px solid #DADAD5; border-radius: 12px; text-decoration: none">
+<div style="width: 64px; height: 48px; border-radius: 6px; background: #E4E4E0; color: #5C5C5C; font-size: 11px; display: flex; align-items: center; justify-content: center">фото</div>
+<div style="flex-grow: 1"><div style="font-size: 15px; font-weight: 600">Суставная разминка</div><div style="font-size: 12px; color: #5C5C5C">sūkṣma vyāyāma</div></div>
+<div style="font-size: 15px; font-weight: 700; color: #B4490F">1</div>
+</a>
+<a href="#Asana" style="display: flex; align-items: center; gap: 12px; padding: 8px; border: 1px solid #DADAD5; border-radius: 12px; text-decoration: none">
+<div style="width: 64px; height: 48px; border-radius: 6px; background: #E4E4E0; color: #5C5C5C; font-size: 11px; display: flex; align-items: center; justify-content: center">фото</div>
+<div style="flex-grow: 1"><div style="font-size: 15px; font-weight: 600">Приветствие солнцу</div><div style="font-size: 12px; color: #5C5C5C">sūrya namaskāra</div></div>
+<div style="font-size: 15px; font-weight: 700; color: #B4490F">2</div>
+</a>
+<a href="#Asana" style="display: flex; align-items: center; gap: 12px; padding: 8px; border: 1px solid #DADAD5; border-radius: 12px; text-decoration: none">
+<div style="width: 64px; height: 48px; border-radius: 6px; background: #E4E4E0; color: #5C5C5C; font-size: 11px; display: flex; align-items: center; justify-content: center">фото</div>
+<div style="flex-grow: 1"><div style="font-size: 15px; font-weight: 600">Кошка — корова</div><div style="font-size: 12px; color: #5C5C5C">mārjārīāsana — bitilāsana</div></div>
+<div style="font-size: 15px; font-weight: 700; color: #B4490F">3</div>
+</a>
+<a href="#Asana" style="display: flex; align-items: center; gap: 12px; padding: 8px; border: 1px solid #DADAD5; border-radius: 12px; text-decoration: none">
+<div style="width: 64px; height: 48px; border-radius: 6px; background: #E4E4E0; color: #5C5C5C; font-size: 11px; display: flex; align-items: center; justify-content: center">фото</div>
+<div style="flex-grow: 1"><div style="font-size: 15px; font-weight: 600">Поза тигра</div><div style="font-size: 12px; color: #5C5C5C">vyāghrāsana</div></div>
+<div style="font-size: 15px; font-weight: 700; color: #B4490F">4</div>
+</a>
+<div style="font-size: 12px; font-weight: 700; letter-spacing: 1px; color: #B4490F; margin-top: 10px">ЛЁЖА НА СПИНЕ</div>
+<a href="#Asana" style="display: flex; align-items: center; gap: 12px; padding: 8px; border: 1px solid #DADAD5; border-radius: 12px; text-decoration: none">
+<div style="width: 64px; height: 48px; border-radius: 6px; background: #E4E4E0; color: #5C5C5C; font-size: 11px; display: flex; align-items: center; justify-content: center">фото</div>
+<div style="flex-grow: 1"><div style="font-size: 15px; font-weight: 600">Поочерёдный подъём ног</div><div style="font-size: 12px; color: #5C5C5C">eka pāda uttānapādāsana</div></div>
+<div style="font-size: 15px; font-weight: 700; color: #B4490F">5</div>
+</a>
+<a href="#Asana" style="display: flex; align-items: center; gap: 12px; padding: 8px; border: 1px solid #DADAD5; border-radius: 12px; text-decoration: none">
+<div style="width: 64px; height: 48px; border-radius: 6px; background: #E4E4E0; color: #5C5C5C; font-size: 11px; display: flex; align-items: center; justify-content: center">фото</div>
+<div style="flex-grow: 1"><div style="font-size: 15px; font-weight: 600">Подъём двух ног</div><div style="font-size: 12px; color: #5C5C5C">uttānapādāsana</div></div>
+<div style="font-size: 15px; font-weight: 700; color: #B4490F">6</div>
+</a>
+<a href="#Asana" style="display: flex; align-items: center; gap: 12px; padding: 8px; border: 1px solid #DADAD5; border-radius: 12px; text-decoration: none">
+<div style="width: 64px; height: 48px; border-radius: 6px; background: #E4E4E0; color: #5C5C5C; font-size: 11px; display: flex; align-items: center; justify-content: center">фото</div>
+<div style="flex-grow: 1"><div style="font-size: 15px; font-weight: 600">Колено к груди</div><div style="font-size: 12px; color: #5C5C5C">pavanamuktāsana</div></div>
+<div style="font-size: 15px; font-weight: 700; color: #B4490F">7</div>
+</a>
+<div style="font-size: 13px; color: #5C5C5C; text-align: center; padding: 4px 0">… ещё 34 шага, список прокручивается</div>
+</div>
+<div style="padding: 12px 24px 16px">
+<a href="#Player" style="display: flex; align-items: center; justify-content: center; height: 56px; border-radius: 28px; background: #B4490F; color: #FFFFFF; font-size: 17px; font-weight: 600; text-decoration: none">Начать с ведущим</a>
+</div>
+<div style="display: flex; border-top: 1px solid #DADAD5; height: 64px">
+<a href="#Main" style="flex-grow: 1; flex-basis: 0; display: flex; align-items: center; justify-content: center; font-size: 13px; color: #5C5C5C; text-decoration: none">Сегодня</a>
+<a href="#Program" style="flex-grow: 1; flex-basis: 0; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 700; color: #B4490F; text-decoration: none">Программа</a>
+<a href="#Calendar" style="flex-grow: 1; flex-basis: 0; display: flex; align-items: center; justify-content: center; font-size: 13px; color: #5C5C5C; text-decoration: none">Календарь</a>
+<a href="#Friends" style="flex-grow: 1; flex-basis: 0; display: flex; align-items: center; justify-content: center; font-size: 13px; color: #5C5C5C; text-decoration: none">Друзья</a>
+</div>
+</div></div></section>
+<section id="Player"><h2>3. Ведущий с таймером</h2><div class="phone"><div style="width: 390px; height: 844px; box-sizing: border-box; background: #FFFFFF; color: #1A1A1A; font-family: Inter, system-ui, sans-serif; display: flex; flex-direction: column; padding: 28px 24px 24px; gap: 14px">
+<div style="display: flex; justify-content: space-between; align-items: center; font-size: 14px; color: #5C5C5C">
+<a href="#Main" style="display: flex; align-items: center; height: 44px; color: #5C5C5C">Закончить</a>
+<div>шаг 4 из 41 · осталось 33:10</div>
+</div>
+<div style="height: 6px; border-radius: 3px; background: #E4E4E0; display: flex">
+<div style="width: 18%; border-radius: 3px; background: #B4490F"></div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 4px">
+<div style="font-size: 12px; font-weight: 700; letter-spacing: 1px; color: #B4490F">РАЗМИНКА</div>
+<div style="font-size: 28px; font-weight: 700; line-height: 1.15">Поза тигра (4)</div>
+<div style="font-size: 14px; color: #5C5C5C">vyāghrāsana</div>
+</div>
+<a href="#Asana" style="height: 230px; border-radius: 16px; background: #E4E4E0; color: #5C5C5C; font-size: 14px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; text-decoration: none">
+<svg aria-hidden="true" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#5C5C5C" stroke-width="1.5" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M10 8l6 4-6 4z"/></svg>
+<div>фото или видео асаны</div>
+<div style="font-size: 12px">нажми — откроется карточка</div>
+</a>
+<div style="font-size: 14px; color: #5C5C5C; line-height: 1.45">Из кошки: колено ко лбу, затем нога назад. Поочерёдно на обе ноги.</div>
+<div style="flex-grow: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px">
+<div style="font-size: 76px; font-weight: 700; line-height: 1; letter-spacing: -2px">1:12</div>
+<div style="font-size: 14px; color: #5C5C5C">дальше: Поочерёдный подъём ног (5)</div>
+</div>
+<div style="display: flex; align-items: center; justify-content: center; gap: 16px">
+<button aria-label="Предыдущая асана" style="width: 56px; height: 56px; border-radius: 28px; border: 1px solid #1A1A1A; background: #FFFFFF; font-size: 22px; color: #1A1A1A">‹</button>
+<button style="height: 64px; padding: 0 44px; border-radius: 32px; border: none; background: #B4490F; color: #FFFFFF; font-family: inherit; font-size: 18px; font-weight: 600">Пауза</button>
+<button aria-label="Следующая асана" style="width: 56px; height: 56px; border-radius: 28px; border: 1px solid #1A1A1A; background: #FFFFFF; font-size: 22px; color: #1A1A1A">›</button>
+</div>
+<div style="display: flex; justify-content: center; gap: 10px">
+<button style="height: 44px; padding: 0 16px; border-radius: 22px; border: 1px solid #BDBDB8; background: #FFFFFF; font-family: inherit; font-size: 14px; color: #1A1A1A">Упростить</button>
+<button style="height: 44px; padding: 0 16px; border-radius: 22px; border: 1px solid #BDBDB8; background: #FFFFFF; font-family: inherit; font-size: 14px; color: #1A1A1A">Пропустить</button>
+<button style="height: 44px; padding: 0 16px; border-radius: 22px; border: 1px solid #BDBDB8; background: #FFFFFF; font-family: inherit; font-size: 14px; color: #1A1A1A">Голос: вкл</button>
+</div>
+<a href="#Done" style="display: flex; align-items: center; justify-content: center; height: 44px; font-size: 13px; color: #5C5C5C">после последнего шага → экран «Практика окончена»</a>
+</div></div></section>
+<section id="Asana"><h2>4. Карточка асаны</h2><div class="phone"><div style="width: 390px; height: 844px; box-sizing: border-box; background: #FFFFFF; color: #1A1A1A; font-family: Inter, system-ui, sans-serif; display: flex; flex-direction: column; padding: 28px 24px 24px; gap: 14px">
+<a href="#Player" style="display: flex; align-items: center; height: 44px; font-size: 14px; color: #5C5C5C">‹ Назад к практике</a>
+<div style="display: flex; flex-direction: column; gap: 4px">
+<div style="font-size: 12px; font-weight: 700; letter-spacing: 1px; color: #B4490F">СТОЯ · АСАНА 32</div>
+<div style="font-size: 28px; font-weight: 700; line-height: 1.15">Поза воина</div>
+<div style="font-size: 14px; color: #5C5C5C">vīrabhadrāsana · वीरभद्रासन</div>
+</div>
+<div style="height: 210px; border-radius: 16px; background: #E4E4E0; color: #5C5C5C; font-size: 14px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px">
+<svg aria-hidden="true" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#5C5C5C" stroke-width="1.5" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M10 8l6 4-6 4z"/></svg>
+<div>видео с инструктором</div>
+</div>
+<div style="font-size: 15px; line-height: 1.5">Вместе с треугольником и наклоном — связка на одну ногу, затем на другую. Выбери уровень, который подходит сегодня.</div>
+<div style="font-size: 12px; font-weight: 700; letter-spacing: 1px; color: #5C5C5C; margin-top: 4px">УРОВНИ</div>
+<div style="display: flex; flex-direction: column; gap: 8px">
+<div style="display: flex; align-items: center; gap: 12px; padding: 10px; border: 2px solid #B4490F; border-radius: 12px">
+<div style="width: 72px; height: 54px; border-radius: 6px; background: #E4E4E0; color: #5C5C5C; font-size: 11px; display: flex; align-items: center; justify-content: center">фото</div>
+<div style="flex-grow: 1"><div style="font-size: 15px; font-weight: 600">32-1 · Простая</div><div style="font-size: 13px; color: #5C5C5C">Руки в стороны, переднее колено согнуто</div></div>
+</div>
+<div style="display: flex; align-items: center; gap: 12px; padding: 11px; border: 1px solid #DADAD5; border-radius: 12px">
+<div style="width: 72px; height: 54px; border-radius: 6px; background: #E4E4E0; color: #5C5C5C; font-size: 11px; display: flex; align-items: center; justify-content: center">фото</div>
+<div style="flex-grow: 1"><div style="font-size: 15px; font-weight: 600">32-2 · Сложнее</div><div style="font-size: 13px; color: #5C5C5C">Таз развёрнут вперёд, руки вверх</div></div>
+</div>
+<div style="display: flex; align-items: center; gap: 12px; padding: 11px; border: 1px solid #DADAD5; border-radius: 12px">
+<div style="width: 72px; height: 54px; border-radius: 6px; background: #E4E4E0; color: #5C5C5C; font-size: 11px; display: flex; align-items: center; justify-content: center">фото</div>
+<div style="flex-grow: 1"><div style="font-size: 15px; font-weight: 600">32-3 · Продвинутая</div><div style="font-size: 13px; color: #5C5C5C">Баланс на одной ноге, тело параллельно полу</div></div>
+</div>
+</div>
+<div style="flex-grow: 1"></div>
+<a href="#Player" style="display: flex; align-items: center; justify-content: center; height: 56px; border-radius: 28px; background: #B4490F; color: #FFFFFF; font-size: 17px; font-weight: 600; text-decoration: none">Вернуться к практике</a>
+</div></div></section>
+<section id="Done"><h2>5. Практика окончена</h2><div class="phone"><div style="width: 390px; height: 844px; box-sizing: border-box; background: #FFFFFF; color: #1A1A1A; font-family: Inter, system-ui, sans-serif; display: flex; flex-direction: column; align-items: center; padding: 72px 24px 24px; gap: 12px">
+<svg role="img" aria-label="Огонь горит" width="170" height="170" viewBox="0 0 24 24" fill="#B4490F" stroke="#B4490F" stroke-width="1.4" stroke-linejoin="round"><path d="M12 2c1 4 6 6 6 12a6 6 0 0 1-12 0c0-2.200 1-3.600 2.200-4.600C8.400 11.600 9.400 13 10.500 13 10.500 9 10 6 12 2z"/></svg>
+<div style="font-size: 30px; font-weight: 700; margin-top: 8px">Огонь горит</div>
+<div style="font-size: 64px; font-weight: 700; line-height: 1">13</div>
+<div style="font-size: 15px; color: #5C5C5C">дней подряд</div>
+<div style="display: flex; gap: 12px; margin-top: 24px; align-self: stretch">
+<div style="flex-grow: 1; flex-basis: 0; border: 1px solid #DADAD5; border-radius: 12px; padding: 14px; text-align: center"><div style="font-size: 22px; font-weight: 700">41:20</div><div style="font-size: 13px; color: #5C5C5C">на коврике</div></div>
+<div style="flex-grow: 1; flex-basis: 0; border: 1px solid #DADAD5; border-radius: 12px; padding: 14px; text-align: center"><div style="font-size: 22px; font-weight: 700">38 из 41</div><div style="font-size: 13px; color: #5C5C5C">шагов, 3 пропущено</div></div>
+</div>
+<div style="font-size: 14px; color: #5C5C5C; text-align: center; line-height: 1.45; max-width: 300px; margin-top: 12px">Пропущенные шаги не гасят огонь. Считается то, что ты сегодня практиковал.</div>
+<div style="flex-grow: 1"></div>
+<a href="#Main" style="align-self: stretch; display: flex; align-items: center; justify-content: center; height: 56px; border-radius: 28px; background: #B4490F; color: #FFFFFF; font-size: 17px; font-weight: 600; text-decoration: none">На главную</a>
+<a href="#Calendar" style="display: flex; align-items: center; justify-content: center; height: 44px; font-size: 15px; color: #5C5C5C">Открыть календарь</a>
+</div></div></section>
+<section id="Calendar"><h2>6. Календарь</h2><div class="phone"><div style="width: 390px; height: 844px; box-sizing: border-box; background: #FFFFFF; color: #1A1A1A; font-family: Inter, system-ui, sans-serif; display: flex; flex-direction: column">
+<div style="padding: 28px 24px 12px; display: flex; justify-content: space-between; align-items: baseline">
+<div style="font-size: 22px; font-weight: 700">Календарь</div>
+<div style="font-size: 14px; color: #5C5C5C">ноябрь</div>
+</div>
+<div style="flex-grow: 1; padding: 0 24px; display: flex; flex-direction: column; gap: 16px">
+<div style="display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 6px; text-align: center; font-size: 12px; color: #5C5C5C">
+<div>пн</div><div>вт</div><div>ср</div><div>чт</div><div>пт</div><div>сб</div><div>вс</div>
+</div>
+<div style="display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 6px; font-size: 14px">
+<div style="height:44px"></div><div style="height:44px"></div><div style="height:44px"></div><div style="height:44px"></div><div style="height:44px"></div><div style="height:44px"></div><div style="height:44px;border-radius:22px;display:flex;align-items:center;justify-content:center;box-sizing:border-box;background:#B4490F;color:#FFFFFF">1</div><div style="height:44px;border-radius:22px;display:flex;align-items:center;justify-content:center;box-sizing:border-box;background:#B4490F;color:#FFFFFF">2</div><div style="height:44px;border-radius:22px;display:flex;align-items:center;justify-content:center;box-sizing:border-box;background:#B4490F;color:#FFFFFF">3</div><div style="height:44px;border-radius:22px;display:flex;align-items:center;justify-content:center;box-sizing:border-box;background:#B4490F;color:#FFFFFF">4</div><div style="height:44px;border-radius:22px;display:flex;align-items:center;justify-content:center;box-sizing:border-box;background:#B4490F;color:#FFFFFF">5</div><div style="height:44px;border-radius:22px;display:flex;align-items:center;justify-content:center;box-sizing:border-box;background:#B4490F;color:#FFFFFF">6</div><div style="height:44px;border-radius:22px;display:flex;align-items:center;justify-content:center;box-sizing:border-box;border:1px solid #BDBDB8;color:#5C5C5C">7</div><div style="height:44px;border-radius:22px;display:flex;align-items:center;justify-content:center;box-sizing:border-box;border:1px solid #BDBDB8;color:#5C5C5C">8</div><div style="height:44px;border-radius:22px;display:flex;align-items:center;justify-content:center;box-sizing:border-box;background:#B4490F;color:#FFFFFF">9</div><div style="height:44px;border-radius:22px;display:flex;align-items:center;justify-content:center;box-sizing:border-box;background:#B4490F;color:#FFFFFF">10</div><div style="height:44px;border-radius:22px;display:flex;align-items:center;justify-content:center;box-sizing:border-box;background:#B4490F;color:#FFFFFF">11</div><div style="height:44px;border-radius:22px;display:flex;align-items:center;justify-content:center;box-sizing:border-box;background:#B4490F;color:#FFFFFF">12</div><div style="height:44px;border-radius:22px;display:flex;align-items:center;justify-content:center;box-sizing:border-box;background:#B4490F;color:#FFFFFF">13</div><div style="height:44px;border-radius:22px;display:flex;align-items:center;justify-content:center;box-sizing:border-box;background:#B4490F;color:#FFFFFF">14</div><div style="height:44px;border-radius:22px;display:flex;align-items:center;justify-content:center;box-sizing:border-box;background:#B4490F;color:#FFFFFF">15</div><div style="height:44px;border-radius:22px;display:flex;align-items:center;justify-content:center;box-sizing:border-box;background:#B4490F;color:#FFFFFF">16</div><div style="height:44px;border-radius:22px;display:flex;align-items:center;justify-content:center;box-sizing:border-box;background:#B4490F;color:#FFFFFF">17</div><div style="height:44px;border-radius:22px;display:flex;align-items:center;justify-content:center;box-sizing:border-box;background:#B4490F;color:#FFFFFF">18</div><div style="height:44px;border-radius:22px;display:flex;align-items:center;justify-content:center;box-sizing:border-box;background:#B4490F;color:#FFFFFF">19</div><div style="height:44px;border-radius:22px;display:flex;align-items:center;justify-content:center;box-sizing:border-box;border:2px solid #1A1A1A;font-weight:700">20</div><div style="height:44px;border-radius:22px;display:flex;align-items:center;justify-content:center;box-sizing:border-box;color:#5C5C5C">21</div><div style="height:44px;border-radius:22px;display:flex;align-items:center;justify-content:center;box-sizing:border-box;color:#5C5C5C">22</div><div style="height:44px;border-radius:22px;display:flex;align-items:center;justify-content:center;box-sizing:border-box;color:#5C5C5C">23</div><div style="height:44px;border-radius:22px;display:flex;align-items:center;justify-content:center;box-sizing:border-box;color:#5C5C5C">24</div><div style="height:44px;border-radius:22px;display:flex;align-items:center;justify-content:center;box-sizing:border-box;color:#5C5C5C">25</div><div style="height:44px;border-radius:22px;display:flex;align-items:center;justify-content:center;box-sizing:border-box;color:#5C5C5C">26</div><div style="height:44px;border-radius:22px;display:flex;align-items:center;justify-content:center;box-sizing:border-box;color:#5C5C5C">27</div><div style="height:44px;border-radius:22px;display:flex;align-items:center;justify-content:center;box-sizing:border-box;color:#5C5C5C">28</div><div style="height:44px;border-radius:22px;display:flex;align-items:center;justify-content:center;box-sizing:border-box;color:#5C5C5C">29</div><div style="height:44px;border-radius:22px;display:flex;align-items:center;justify-content:center;box-sizing:border-box;color:#5C5C5C">30</div>
+</div>
+<div style="display: flex; gap: 16px; font-size: 13px; color: #5C5C5C">
+<div style="display: flex; align-items: center; gap: 6px"><div style="width: 14px; height: 14px; border-radius: 7px; background: #B4490F"></div>практика</div>
+<div style="display: flex; align-items: center; gap: 6px"><div style="width: 14px; height: 14px; border-radius: 7px; border: 1px solid #BDBDB8; box-sizing: border-box"></div>пропуск</div>
+<div style="display: flex; align-items: center; gap: 6px"><div style="width: 14px; height: 14px; border-radius: 7px; border: 2px solid #1A1A1A; box-sizing: border-box"></div>сегодня</div>
+</div>
+<div style="display: flex; gap: 12px">
+<div style="flex-grow: 1; flex-basis: 0; border: 1px solid #DADAD5; border-radius: 12px; padding: 14px"><div style="font-size: 24px; font-weight: 700">12</div><div style="font-size: 13px; color: #5C5C5C">дней подряд сейчас</div></div>
+<div style="flex-grow: 1; flex-basis: 0; border: 1px solid #DADAD5; border-radius: 12px; padding: 14px"><div style="font-size: 24px; font-weight: 700">21</div><div style="font-size: 13px; color: #5C5C5C">самая длинная серия</div></div>
+</div>
+<div style="border: 1px solid #DADAD5; border-radius: 12px; padding: 14px; font-size: 14px; line-height: 1.45; color: #5C5C5C">Огонь погас 7 ноября и был зажжён снова 9 ноября. Его можно спокойно зажечь снова в любой день.</div>
+</div>
+<div style="display: flex; border-top: 1px solid #DADAD5; height: 64px">
+<a href="#Main" style="flex-grow: 1; flex-basis: 0; display: flex; align-items: center; justify-content: center; font-size: 13px; color: #5C5C5C; text-decoration: none">Сегодня</a>
+<a href="#Program" style="flex-grow: 1; flex-basis: 0; display: flex; align-items: center; justify-content: center; font-size: 13px; color: #5C5C5C; text-decoration: none">Программа</a>
+<a href="#Calendar" style="flex-grow: 1; flex-basis: 0; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 700; color: #B4490F; text-decoration: none">Календарь</a>
+<a href="#Friends" style="flex-grow: 1; flex-basis: 0; display: flex; align-items: center; justify-content: center; font-size: 13px; color: #5C5C5C; text-decoration: none">Друзья</a>
+</div>
+</div></div></section>
+<section id="Friends"><h2>7. Друзья (второй этап)</h2><div class="phone"><div style="width: 390px; height: 844px; box-sizing: border-box; background: #FFFFFF; color: #1A1A1A; font-family: Inter, system-ui, sans-serif; display: flex; flex-direction: column">
+<div style="padding: 28px 24px 12px; display: flex; justify-content: space-between; align-items: baseline">
+<div style="font-size: 22px; font-weight: 700">Друзья</div>
+<div style="font-size: 14px; color: #5C5C5C">второй этап</div>
+</div>
+<div style="flex-grow: 1; padding: 0 24px; display: flex; flex-direction: column; gap: 10px">
+<div style="font-size: 14px; color: #5C5C5C; line-height: 1.45">Видно огонь друг друга. Без рейтинга и соревнования: только кто сегодня был на коврике.</div>
+<div style="display: flex; align-items: center; gap: 12px; padding: 12px; border: 1px solid #DADAD5; border-radius: 12px">
+<div style="width: 44px; height: 44px; border-radius: 22px; background: #E4E4E0; color: #5C5C5C; font-size: 12px; display: flex; align-items: center; justify-content: center">фото</div>
+<div style="flex-grow: 1"><div style="font-size: 15px; font-weight: 600">[Имя друга]</div><div style="font-size: 13px; color: #5C5C5C">практиковал сегодня</div></div>
+<svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="#B4490F" stroke="#B4490F" stroke-width="1.4" stroke-linejoin="round"><path d="M12 2c1 4 6 6 6 12a6 6 0 0 1-12 0c0-2.200 1-3.600 2.200-4.600C8.400 11.600 9.400 13 10.500 13 10.500 9 10 6 12 2z"/></svg>
+<div style="font-size: 17px; font-weight: 700; min-width: 28px; text-align: right">34</div>
+</div>
+<div style="display: flex; align-items: center; gap: 12px; padding: 12px; border: 1px solid #DADAD5; border-radius: 12px">
+<div style="width: 44px; height: 44px; border-radius: 22px; background: #E4E4E0; color: #5C5C5C; font-size: 12px; display: flex; align-items: center; justify-content: center">фото</div>
+<div style="flex-grow: 1"><div style="font-size: 15px; font-weight: 600">[Имя друга]</div><div style="font-size: 13px; color: #5C5C5C">практиковал сегодня</div></div>
+<svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="#B4490F" stroke="#B4490F" stroke-width="1.4" stroke-linejoin="round"><path d="M12 2c1 4 6 6 6 12a6 6 0 0 1-12 0c0-2.200 1-3.600 2.200-4.600C8.400 11.600 9.400 13 10.500 13 10.500 9 10 6 12 2z"/></svg>
+<div style="font-size: 17px; font-weight: 700; min-width: 28px; text-align: right">12</div>
+</div>
+<div style="display: flex; align-items: center; gap: 12px; padding: 12px; border: 1px solid #DADAD5; border-radius: 12px">
+<div style="width: 44px; height: 44px; border-radius: 22px; background: #E4E4E0; color: #5C5C5C; font-size: 12px; display: flex; align-items: center; justify-content: center">фото</div>
+<div style="flex-grow: 1"><div style="font-size: 15px; font-weight: 600">[Имя друга]</div><div style="font-size: 13px; color: #5C5C5C">сегодня ещё не практиковал</div></div>
+<svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#B4490F" stroke-width="1.4" stroke-linejoin="round"><path d="M12 2c1 4 6 6 6 12a6 6 0 0 1-12 0c0-2.200 1-3.600 2.200-4.600C8.400 11.600 9.400 13 10.500 13 10.500 9 10 6 12 2z"/></svg>
+<div style="font-size: 17px; font-weight: 700; min-width: 28px; text-align: right">5</div>
+</div>
+<div style="display: flex; align-items: center; gap: 12px; padding: 12px; border: 1px solid #DADAD5; border-radius: 12px">
+<div style="width: 44px; height: 44px; border-radius: 22px; background: #E4E4E0; color: #5C5C5C; font-size: 12px; display: flex; align-items: center; justify-content: center">фото</div>
+<div style="flex-grow: 1"><div style="font-size: 15px; font-weight: 600">[Имя друга]</div><div style="font-size: 13px; color: #5C5C5C">огонь погас 3 дня назад</div></div>
+<svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#5C5C5C" stroke-width="1.4" stroke-linejoin="round"><path d="M12 2c1 4 6 6 6 12a6 6 0 0 1-12 0c0-2.200 1-3.600 2.200-4.600C8.400 11.600 9.400 13 10.500 13 10.500 9 10 6 12 2z"/></svg>
+<div style="font-size: 17px; font-weight: 700; min-width: 28px; text-align: right; color: #5C5C5C">0</div>
+</div>
+<button style="height: 48px; border-radius: 24px; border: 1px solid #1A1A1A; background: #FFFFFF; font-family: inherit; font-size: 15px; color: #1A1A1A; margin-top: 6px">Поддержать друга</button>
+<button style="height: 48px; border-radius: 24px; border: 1px solid #1A1A1A; background: #FFFFFF; font-family: inherit; font-size: 15px; color: #1A1A1A">Пригласить по ссылке</button>
+<div style="font-size: 13px; color: #5C5C5C; line-height: 1.45; margin-top: 6px">Этому экрану нужны учётные записи и сервер. Остальные шесть экранов работают без них.</div>
+</div>
+<div style="display: flex; border-top: 1px solid #DADAD5; height: 64px">
+<a href="#Main" style="flex-grow: 1; flex-basis: 0; display: flex; align-items: center; justify-content: center; font-size: 13px; color: #5C5C5C; text-decoration: none">Сегодня</a>
+<a href="#Program" style="flex-grow: 1; flex-basis: 0; display: flex; align-items: center; justify-content: center; font-size: 13px; color: #5C5C5C; text-decoration: none">Программа</a>
+<a href="#Calendar" style="flex-grow: 1; flex-basis: 0; display: flex; align-items: center; justify-content: center; font-size: 13px; color: #5C5C5C; text-decoration: none">Календарь</a>
+<a href="#Friends" style="flex-grow: 1; flex-basis: 0; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 700; color: #B4490F; text-decoration: none">Друзья</a>
+</div>
+</div></div></section>
+</div></body></html>
